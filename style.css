@@ -70,12 +70,12 @@ body {
     transition: all .3s ease-in-out;
   }
  
-  .note {
+  /* .note {
     display: block;
     width: 100%;
     height: 24px;
     border-style: solid;
-  }
+  } */
   
   /* .currentDay {
     background-color: blue;

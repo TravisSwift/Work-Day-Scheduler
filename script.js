@@ -32,12 +32,6 @@ $(document).ready(
                 newTimeBlock.classList.add("future");
             }
 
-// LOADING GOES HERE
-
-            // test that element is selected
-            //   newTimeBlock.setAttribute("onclick", "alert('blah'), inputText;");
-
-
         }
     }
 
@@ -54,18 +48,6 @@ $(document).ready(
     }
     );
 
-// $("p.note").click(
-//     function () {
-//         var newElement = document.createElement("input");
-//         newElement.type = "text";
-//         newElement.classList.add("note");
-//         newElement.value = $(this).html();
-//         newElement
-//             .addEventListener("blur");
-//         $(this).replaceWith(newElement);
-//         newInput.focu();
-//     }
-// );
 
 $(document).on("blur", "input.note", function(){
 // create a <p> element
@@ -76,6 +58,10 @@ $(document).on("blur", "input.note", function(){
         $(this).replaceWith(newParagraph);
         
         //save goes here
+
+        localStorage.setItem(saveBtn);
+// Retrieve
+document.getElementById(saveBtn).innerHTML = localStorage.getItem(hour-block);
     } 
 );
 

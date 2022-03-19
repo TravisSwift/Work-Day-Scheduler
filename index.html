@@ -22,67 +22,72 @@
     <title>Work Day Scheduler</title>
   </head>
 
+
+  
   <body>
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
     </header>
+
     <div class="container">
-      <div class="timeblock" id="9">
-      <p class="time">9am</p>
-      <p class="note" onclick="pToInput(this)">This is some text</p>
-    </div>
-  
-      <div class="timeblock" id="10">
-      <p class="time">10am</p>
-      <p class="note"></p>
-    </div>
-   
-      <div class="timeblock" id="11">
-      <p class="time">11am</p>
-      <p class="note"></p>
-    </div>
-      <div class="timeblock" id="12">
-      <p class="time">12am</p>
-      <p class="note"></p>
-    </div>
-  
-      <div class="timeblock" id="13">
-      <p class="time">1pm</p>
-      <p class="note"></p>
-    </div>
 
-      <div class="timeblock" id="14">
-      <p class="time">2pm</p>
-      <p class="note"></p>
-    </div>
+
+      <div class="hour-block" id="9" class="row">
+        <p class="hour">9am</p>
+        <textarea class="description" onclick="pToInput(this)"></textarea>
+        <div class="saveBtn"> <i class="fas fa-save"></i> </div>
+      </div>
+
+      <div class="hour-block" id="10">
+        <p class="hour">10am</p>
+        <textarea class="description" onclick="pToInput(this)"></textarea>
+        <div class="saveBtn"> <i class="fas fa-save"></i> </div>
+      </div>
     
-      <div class="timeblock" id="15">
-      <p class="time">3pm</p>
-      <p class="note"></p>
-    </div>
-  
-      <div class="timeblock" id="16">
-      <p class="time">4pm</p>
-      <p class="note"></p>
-    </div>
+      <div class="hour-block" id="11">
+        <p class="hour">11am</p>
+        <textarea class="description" onclick="pToInput(this)"></textarea>
+        <div class="saveBtn"> <i class="fas fa-save"></i> </div>
+      </div>
+
+      <div class="hour-block" id="12">
+        <p class="hour">12am</p>
+        <textarea class="description" onclick="pToInput(this)"></textarea>
+        <div class="saveBtn"> <i class="fas fa-save"></i> </div>
+      </div>
     
-      <div class="timeblock" id="17">
-      <p class="time">5pm</p>
-      <p class="note"></p>
-    </div>
-      <!-- Timeblocks go here -->
-
-      <!-- on click event for container-->
-      <!-- <input type="text" class="container"> -->
-
-  
-    <!--  <div class="currentDay">
-       <p input.type="text" class="Timeblocks"> 9:00</p>      
-      </div> -->
-
-
+      <div class="hour-block" id="13">
+        <p class="hour">1pm</p>
+        <textarea class="description" onclick="pToInput(this)"></textarea>
+        <div class="saveBtn"> <i class="fas fa-save"></i> </div>
+      </div>
+    
+      <div class="hour-block" id="14">
+        <p class="hour">2pm</p>
+        <textarea class="description" onclick="pToInput(this)"></textarea>
+        <div class="saveBtn"> <i class="fas fa-save"></i> </div>
+      </div>
+    
+      <div class="hour-block" id="15">
+        <p class="hour">3pm</p>
+        <textarea class="description" onclick="pToInput(this)"></textarea>
+        <div class="saveBtn"> <i class="fas fa-save"></i> </div>
+      </div>
+    
+      <div class="hour-block" id="16">
+        <p class="hour">4pm</p>
+        <textarea class="description" onclick="pToInput(this)"></textarea>
+        <div class="saveBtn"> <i class="fas fa-save"></i> </div>
+      </div>
+    
+      <div class="hour-block" id="17">
+        <p class="hour">5pm</p>
+        <textarea class="description" onclick="pToInput(this)"></textarea>
+        <div class="saveBtn"> <i class="fas fa-save"></i> </div>
+      </div>
+    
     </div>
     
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
